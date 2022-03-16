@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Турагентство <br><span>Я в отпуск</span></h1>
+    </header>
+    <main>
+        <article class="common">
+            <h2>Поделитесь своими впечатлениями</h2>
+            <p>Нам важно Ваше мнение</p>
+            <form id="form" action="" style="background: url('img/vacation.png') 95% 80%/250px auto no-repeat;">
+                <fieldset id="contact-data">
+                    <legend>Контактные данные</legend>
+                    <input type="text" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-я]{1,20}" required>
+                    <input type="text" name="surname" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я]{1,20}" required>
+                    <input type="tel" name="phone" placeholder="8(__)___-__-__" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <input type="email" name="email" placeholder="E-mail (не обязательно)">
+                </fieldset>
+                <fieldset id="personal-data">
+                    <legend>Оценка нашего агентства</legend>
+                    <label for="tour">Какой тур Вы приобрели?</label>
+                    <input list="tour-list" id="tour" placeholder="Выберите вариант из списка" required>
+                    <datalist id="tour-list">
+                        <option value="Zahabia Hotel & Beach Resort 4* Египет, Хургада"></option>
+                        <option value="Falcon Hills 3* Египет, Шарм-Эль-Шейх"></option>
+                        <option value="Nubia Aqua Beach Resort 5* Египет, Хургада"></option>
+                        <option value="Sol Cyrene  4* Египет, Шарм-Эль-Шейх"></option>
+                        <option value="ГРЕЦИЯ, КРИТ - ИРАКЛИОН Anna Maria Village 3*"></option>
+                    </datalist>
+
+                    <label for="num_people">На какое число человек Вы приобрели тур?</label>
+                    <input type="number" id="num_people" placeholder="Укажите число" max="10" min="1" required>
+
+                    <label>Из каких источников Вы узнали о нашем агентстве?</label>
+                    <label for="source1" class="for-checkbox">
+                        <input type="checkbox" id="source1" name="source" value="Из социальных сетей" onclick="requiredCheckbox()" required>
+                        Из социальных сетей</label>
+                    <label for="source2" class="for-checkbox">
+                        <input type="checkbox" id="source2" name="source" value="Посоветовали друзья/знакомые/коллеги" onclick="requiredCheckbox()" required>
+                        Посоветовали друзья/знакомые/коллеги</label>
+                    <label for="source3" class="for-checkbox">
+                        <input type="checkbox" id="source3" name="source" value="Увидел рекламу на TV" onclick="requiredCheckbox()" required>
+                        Увидел рекламу на TV</label>
+                    <label for="source4" class="for-checkbox">
+                        <input type="checkbox" id="source4" name="source" value="СМИ" onclick="requiredCheckbox()" required>
+                        СМИ</label>
+                    <label for="source5" class="for-checkbox">
+                        <input type="checkbox" id="source5" name="source" value="Почтовая рассылка" onclick='requiredCheckbox()' required>
+                        Почтовая рассылка</label>
+                    <label for="source6" class="for-checkbox">
+                        <input type="checkbox" id="source6" name="source" value="Другое" onclick='requiredCheckbox()' required>
+                        Другое</label>
+                    <label for="mark">Оцените работу нашего агентства</label>
+                    <div class="btn-radio">
+                        <input type="radio" name="mark" id="mark1" value="1" required>
+                        <input type="radio" name="mark" id="mark2" value="2">
+                        <input type="radio" name="mark" id="mark3" value="3">
+                        <input type="radio" name="mark" id="mark4" value="4">
+                        <input type="radio" name="mark" id="mark5" value="5">
+                        <label for="mark1">1</label>
+                        <label for="mark2">2</label>
+                        <label for="mark3">3</label>
+                        <label for="mark4">4</label>
+                        <label for="mark5">5</label>
+                    </div>
+                    <label for="color">Выберите цвет</label>
+                    <input type="color" name="color" id="color" value="#eccb85">
+                </fieldset>
+                <input type="hidden" name="country" value="Belarus">
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </article>
+        <nav>
+            <h2>Меню</h2>
+            <ul class="menu">
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Главная</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Путевки</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Галерея</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Партнеры</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Вопросы и ответы</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="https://google.com">Отзывы</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="index.html">Опрос</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="index.html">Результаты опроса</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <h2>Специальные предложения</h2>
+            <ul class="news">
+                <li class="animate__animated animate__fadeInUp"><a href="">Путевка в Египет с «Комфорт+»: трансфер в подарок!</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">ОАЭ с вылетами из Минска: специальные цены на лучшие отели!</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">ELA QUALITY RESORT BELEK 5 * в Турции!</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">RIXOS PREMIUM MAGAWISH 5 *: отдыхайте дольше, платите меньше!</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">Идеальные выходные в Беловежской пуще (3 дня отдыха)</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">Автобусный тур во Львов на 3 дня из Минска. Лучшая экскурсионная программа.</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="">Бронируйте туры в рассрочку: первый платёж — от 10 %, второй платёж — за 14 дней до вылета.</a></li>
+            </ul>
+        </aside>
+    </main>
+    <div class="blackout hidden">
+        <div class="modal-window common">
+            <h2>Результаты опроса</h2>
+            <div class="scroll" style="width: 100%; height: 50%; overflow-y: scroll;">
+                <table id="table_result">
+                    <tr>
+                        <th>ФИ</th>
+                        <th>Номер тел.</th>
+                        <th>E-mail</th>
+                        <th>Тур</th>
+                        <th>Кол-во путевок</th>
+                        <th>Оценка</th>
+                        <th>Источники</th>
+                    </tr>
+                </table>
+            </div>
+            <h2>Зарегистрировавшиеся</h2>
+            <input list="clients-list" id="clients" placeholder="Выберите вариант из списка">
+            <datalist id="clients-list"></datalist>
+            <form class="table-style">
+                <label for="bg">
+                    <input type="color" name="color" value="#048f32">
+                    Цвет таблицы</label>
+                <label for="border">
+                    <input type="number" name="border" min="1" max="3" value="1">
+                    Ширина границ</label>
+                <label for="size">
+                    <input type="number" name="size" min="16" max="25" value="18">
+                    Размер текста</label>
+                <input type="reset" value="Сбросить">
+            </form>
+        </div>
+        <span class="close"></span>
+    </div>
+    <footer>
+        <div class="inf">
+            <h3>Время работы</h3>
+            <ul>
+                <li>ПН - ПТ: с 11:00 до 21:00</li>
+                <li>СБ - ВС: с 12:00 до 20:00</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h3>Контакты</h3>
+            <ul>
+                <li>+375 33 629-99-00</li>
+                <li>+375 17 399-99-87</li>
+            </ul>
+        </div>
+        <div class="inf">
+            <h3>Социальные сети</h3>
+            <a href="https://vk.com"></a>
+            <a href="https://instagram.com"></a>
+            <a href="https://facebook.com"></a>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

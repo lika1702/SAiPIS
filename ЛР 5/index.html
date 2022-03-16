@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Меню</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="html/addNew.html">Добавить отдел</a></li>
+        </ul>
+    </nav>
+    <h1>Список отделов компании "ХХХ"</h1>
+    <table id="table">
+        <tr>
+            <th>Наименование отдела</th>
+            <th>Адрес</th>
+            <th>Персонал</th>
+            <th>ФИО менеджера</th>
+            <th>Номер телефона</th>
+        </tr>
+    </table>
+    <div class="delete_button">
+        <input type="submit" value="Удалить запись" id="delete">
+        <input type="submit" value="Удалить по ID" id="delete_by_id">
+    </div>
+    <div class="find_button">
+        <input type="submit" value="MAX сотрудников" id="max">
+        <input type="submit" value="MIN сотрудников" id="min">
+    </div>
+    <div class="modal_for_delete">
+        <div class="modal_window">
+           <div>
+               <table></table>
+           </div>
+            <input type="submit" id="submit-delete" Value="Удалить">
+            <input type="submit" Value="Отмена">
+        </div>
+    </div>
+    <div class="modal_for_delete">
+        <div class="modal_window">
+          <h2>Удалить информацию об отделе компании "ХХХ" по ID</h2>
+           <select name="delete" id="select_id">
+               <option value="" hidden>Выберите ID</option>
+           </select>
+            <input type="submit" id="submit-delete_by_id" Value="Удалить">
+            <input type="submit" Value="Отмена">
+        </div>
+    </div>
+    <div class="modal_for_delete">
+        <div class="modal_window" style="margin-top: 12%; height: 400px">
+          <h2></h2>
+          <span class="span"></span>
+        </div>
+        <span class="close"></span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

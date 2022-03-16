@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="align_table">
+        <table>
+            <tr><td>ЛР 1 - Элементы навигации на Web-странице. Понятие о табличной верстке</td></tr>
+            <tr><td>ЛР 2 - Основы блочной верстки. Элементы CSS3 и HTML5</td></tr>
+            <tr><td>ЛР 3 - Основы языка JavaScript. Создание форм в документах HTML</td></tr>
+            <tr><td>ЛР 4 - Объектная модель документов. Понятие DOM, DHTML</td></tr>
+        </table>
+    </div>
+    
+    <div class="align_select">
+       <input type="text" id="string" readonly placeholder="Наведите курсор на строку таблицы">
+        <select name="bg_color" id="bg_color">
+            <option value="#fff957" hidden selected>Цвет фона</option>
+            <option value="#ff0000">Красный</option>
+            <option value="#ffb700">Оранжевый</option>
+            <option value="#fbff00">Желтый</option>
+            <option value="#00ff00">Зеленый</option>
+            <option value="#00ffff">Голубой</option>
+            <option value="#0000ff">Синий</option>
+            <option value="#cc00ff">Фиолетовый</option>
+            <option value="#000">Черный</option>
+            <option value="#fff">Белый</option>
+        </select>
+        <select name="text_color" id="text_color">
+            <option value="#444444" hidden selected>Цвет текста</option>
+            <option value="#ff0000">Красный</option>
+            <option value="#ffb700">Оранжевый</option>
+            <option value="#fbff00">Желтый</option>
+            <option value="#00ff00">Зеленый</option>
+            <option value="#00ffff">Голубой</option>
+            <option value="#0000ff">Синий</option>
+            <option value="#cc00ff">Фиолетовый</option>
+            <option value="#000">Черный</option>
+            <option value="#fff">Белый</option>
+        </select>
+        <select name="font_size" id="font_size">
+            <option value="20" hidden selected>Размер шрифта</option>
+            <option value="17">17 пт</option>
+            <option value="18">18 пт</option>
+            <option value="19">19 пт</option>
+            <option value="20">20 пт</option>
+            <option value="21">21 пт</option>
+            <option value="22">22 пт</option>
+            <option value="23">23 пт</option>
+            <option value="24">24 пт</option>
+            <option value="25">25 пт</option>
+        </select>
+        <div class="style-buttons">
+            <button id="btn-style">Применить выбранные параметры</button>
+            <button id="btn-style-reset">Сбросить</button>
+        </div>
+        <button id="btn-add">Добавить новую строку в таблицу</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

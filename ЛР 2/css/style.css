@@ -1,0 +1,390 @@
+/*index.html*/
+.London {
+    width: 1519px;
+    height: 1000px;
+    background: url("../img/wood.jpg") 0 0/500px auto repeat;
+    text-align: center;
+}
+.London path {
+    fill: #82031a;
+}
+.London h1 {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: Impact, fantasy;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.London h2 {
+    font-family: Impact, fantasy;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+}
+.next-page {
+    width: 200px;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    background: #82031a;
+    position: fixed;
+    font-family: Impact, fantasy;
+    font-size: 22px;
+    line-height: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.London nav {
+    width: 210px;
+    height: 300px;
+    background: #82031a;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    font-family: Impact, fantasy;
+    font-size: 25px;
+    color: #fff;
+    text-align: left;
+    padding: 30px;
+}
+
+.block {
+    width: 500px;
+    height: 700px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 0 0 20px 20px;
+    border: 5px solid #82031a;
+    box-shadow: 0 10px 20px rgba(31, 31, 31, 0.6);
+    padding: 30px;
+    text-align: justify;
+}
+.block p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1f1f1f;
+    margin-bottom: 50px;
+}
+#one {
+    background: rgb(155,152,134);
+    background: -webkit-linear-gradient(-90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    background: -o-linear-gradient(-90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    background: linear-gradient(-90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    border-right: 0;
+    text-indent: 30px;
+}
+#two {
+    background: rgb(155,152,134);
+    background: -webkit-linear-gradient(90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    background: -o-linear-gradient(90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    background: linear-gradient(90deg, rgba(155,152,134,1) 0%, rgba(202,199,180,1) 9%, rgba(230,228,209,1) 36%, rgba(238,236,218,1) 61%, rgba(244,243,225,1) 100%);
+    border-left: 0;
+}
+
+.facts {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1f1f1f;
+    margin-bottom: 50px;
+}
+.facts li {
+    margin-bottom: 10px;
+}
+.facts li::before {
+    content: '📌';
+}
+.facts li::after {
+    content: '❗';
+}
+
+figure {
+    text-align: right;
+}
+figure img {
+    width: 300px;
+    margin-bottom: 10px;
+    border: 10px ridge #82031a;
+}
+figcaption {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #1f1f1f;
+}
+
+.circle {
+     width: 435px;
+     height: 100px;
+}
+.circle circle {
+    fill: none;
+    stroke: #666;
+    stroke-width: 2px;
+}
+.circle text {
+    font-family: Impact, fantasy;
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    fill: #1f1f1f;
+    animation: flashing .7s Infinite alternate ease-in;
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Berlin.html*/
+.Berlin {
+    width: 1519px;
+    height: 1000px;
+    background: url("../img/woodLight.jpg") 0 0/500px auto repeat;
+    text-align: center; 
+}
+.Berlin path {
+    fill: #4ab096;
+    stroke: rgba(31, 31, 31, 0.3);
+    stroke-width: 5px;
+}
+.Berlin h1 {
+    position: absolute;
+    top: 55px;
+    left: 305px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-family: Impact, fantasy;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.Berlin h2 {
+    font-family: Impact, fantasy;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+}
+.previous-page {
+    width: 200px;
+    height: 100px;
+    border-radius: 0 150px  0 0;
+    bottom: 0;
+    left: 0;
+    background: #4ab096;
+    position: fixed;
+    font-family: Impact, fantasy;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 100px;
+    border: 5px solid rgba(31, 31, 31, 0.3);
+    border-left: 0;
+    border-bottom: 0;
+}
+.Berlin nav {
+    width: 200px;
+    height: 300px;
+    background: #4ab096;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Impact, fantasy;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 0 0 150px 0;
+    text-align: left;
+    padding: 30px;
+    border: 5px solid rgba(31, 31, 31, 0.3);
+    border-left: 0;
+    border-top: 0;
+}
+
+article {
+    display: inline-block;
+    width: 470px;
+    text-align: justify;
+    vertical-align: top;
+    margin: 0 2px 0 2px;
+    padding: 0 10px;
+} 
+article p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #1f1f1f;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-indent: 30px;
+}
+article ul {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #1f1f1f;
+}
+article li {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+article li::before {
+    content: '📌';
+}
+article textarea {
+    width: 195px;
+    height: 180px;
+    padding: 20px;
+    background: #defcf5;
+    font-family: Impact, fantasy;
+    font-size: 18px;
+    color: rgb(171, 22, 15);
+}
+article textarea:placeholder-shown {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #b8b8b8;
+}
+article textarea:focus {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #124533;
+}+
+
+.container {
+    width: 1013px;
+    height: 598px;
+    border-radius: 0 10px 10px 10px;
+    padding: 30px;
+    background: rgba(255, 255, 255, .7);
+}
+
+.Berlin figure {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+.Berlin figure img {
+    width: 250px;
+    margin-bottom: 10px;
+    border: 10px outset #16594a;
+}
+
+.attractions {
+    width: 500px;
+    height: 250px;
+    background: rgb(202,199,180);
+    background: rgb(180,202,192);
+    background: radial-gradient(circle, rgba(180,202,192,1) 2%, rgba(165,187,178,1) 29%, rgba(147,182,169,1) 50%, rgba(215,215,215,1) 72%, rgba(180,180,180,1) 100%);
+    position: relative;
+    bottom: 270px;
+    left: 550px;
+    border-radius: 10px;
+    border: 5px double #16594a;
+    box-shadow: 5px 5px 30px rgba(31, 31, 31, 0.7);
+    padding: 20px;
+}
+.attractions ul {
+   font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+}
+.attractions li {
+    margin-bottom: 10px;
+}
+.attractions li::after {
+    content: '✨';
+}
+.attractions img {
+    width: 90px;
+    position: absolute;
+}
+.attractions img:nth-child(2) {
+    top: 20px;
+    left: 50px;
+    z-index: 2;
+}
+.attractions img:nth-child(3) {
+    top: 80px;
+    left: 110px;
+    z-index: 3;
+}
+.attractions img:nth-child(4) {
+    top: 130px;
+    left: 40px;
+    z-index: 0;
+}
+.attractions img:active {
+    transform: scale(3);
+    z-index: 5;
+}
+
+/*Common*/
+.Berlin section {
+    width: 100%;
+    height: 754px;
+    padding: 103px 0 0 253px;
+}
+.London section {
+    width: 100%;
+    height: 754px;
+}
+footer {
+    width: 1013px;
+    height: 246px;
+    background: url("../img/city.jpg") center/100% auto no-repeat;
+    display: inline-block;
+    border: 10px solid rgba(31, 31, 31, 0.3);
+    background-clip: padding-box;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+svg {
+    width: 100%;
+    height: 100%;
+}
+.svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1519px;
+    height: 753px;
+    z-index: -1;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+.menu li:nth-child(2) { animation-delay: .2s; }
+.menu li:nth-child(3) { animation-delay: .4s; }
+.menu li:nth-child(4) { animation-delay: .6s; }
+.menu li:nth-child(5) { animation-delay: .8s; }
+a {
+    color: #fff;
+    transition: all .1s linear;
+    display: inline-block;
+}
+a:visited {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transform: scale(1.2);
+}

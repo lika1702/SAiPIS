@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Меню</a></li>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="./addNew.html">Добавить отдел</a></li>
+        </ul>
+    </nav>
+    <h1>Добавить данные об отделе</h1>
+    <form action="" class="add_manager">
+        <fieldset>
+            <legend>Отдел</legend>
+            <label for="department">Наименование отдела
+                <input type="text" id="department" name="department" placeholder="Наименование отдела" pattern="[A-Za-zА-Яа-я]{1,50}\s?[A-Za-zА-Яа-я]{1,50}"></label>
+            <label for="adress">Юридический адрес
+                <input type="text" id="adress" name="adress" placeholder="Юридический адрес"></label>
+            <label for="q_employees">Количество сотрудников
+                <input type="number" id="q_employees" name="q_employees" placeholder="Количество сотрудников" min="1"></label>
+        </fieldset>
+        <fieldset id="for_new_property">
+            <legend>Менеджер</legend>
+            <label for="surname">Фамилия
+                <input type="text" id="surname" name="surname" placeholder="Фамилия" pattern="[A-Za-zА-Яа-я]{1,20}"></label>
+            <label for="name">Имя
+                <input type="text" id="name" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-я]{1,20}"></label>
+            <label for="patronymic">Отчество
+                <input type="text" id="patronymic" name="patronymic" placeholder="Отчество" pattern="[A-Za-zА-Яа-я]{1,20}"></label>
+            <label for="phone">Номер телефона
+                <input type="tel" id="phone" name="phone" placeholder="8(__)___-__-__" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"></label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" placeholder="email@gmail.com"></label>
+            <div></div>
+        </fieldset>
+
+        <input type="submit" id="recieve">
+        <input type="reset" id="clear">
+    </form>
+    <script src="../js/addNew.js"></script>
+</body>
+
+</html>
